@@ -1,3 +1,7 @@
+body{
+    margin: 0;
+    padding: 0;
+}
 .container{
     display: grid;
     width: 100%;
@@ -106,9 +110,14 @@
     background: rgb(56, 56, 56);
     font-size: medium;
     font-weight: 400;
-    height: 50px;
+    height: 30px;
     text-align: center;
     grid-area: ft;
+    position: fixed;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    bottom: 0;
 }
 
 .footer a{
@@ -116,13 +125,34 @@
     color: gray;
 }
 
-@media(min-width: 555px){
+.post1, .post2, .post3, .post4{
+    border-radius: 15px;
+    border: 4px solid rgba(128, 128, 128, 0.575);
+}
+
+@media(min-width: 600px){
 
     .content{
         display: grid;
         grid-template-columns: auto auto;
         margin: 10px;
+        max-width: 2000px;
         grid-gap: 10px;
+    }   
+
+    #one{
+        font-size: x-large;
     }
-    
+
+    #two{
+        font-size: medium;
+    }
 }
+
+@media(min-width: 2000px){
+    .content{
+        margin: 0 5% 0 5%;
+    }
+}
+
+
